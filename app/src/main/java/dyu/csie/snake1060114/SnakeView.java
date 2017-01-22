@@ -44,7 +44,11 @@ public class SnakeView extends View {
     void init(){
         this.setOnClickListener(listener);
         this.setOnTouchListener(touch);
+<<<<<<< HEAD
 
+=======
+        x100=new int[100]; y100=new int[100];
+>>>>>>> origin/master
         NN=0;
         mTileGrid=new int [60][80];
         brun=new BallRun();
@@ -84,8 +88,16 @@ public class SnakeView extends View {
     void initNewGame(){
         mSnake.clear();
         mFruit.clear();
+<<<<<<< HEAD
 
         NN = 0;
+=======
+        x100[0]=5; y100[0]=7;
+        x100[1]=5; y100[1]=7;
+        x100[2]=5; y100[2]=7;
+        x100[3]=5; y100[3]=7;
+        NN=4;
+>>>>>>> origin/master
 
       //  mSnake.add(new Coordinate(5,7)); mTileGrid[5][7]=1;
       //  mSnake.add(new Coordinate(4,7)); mTileGrid[4][7]=2;
@@ -198,7 +210,11 @@ public class SnakeView extends View {
 //            mTileGrid[c.x][c.y]=4; ;   //使用畫筆4
 //        }
         for(int i=0;i<NA;i++)
+<<<<<<< HEAD
             mTileGrid[ax[i]][ay[i]] = 4; //使用畫筆4
+=======
+            mTileGrid[  ax[i] ][ ay[i]]=4; ;   //使用畫筆4
+>>>>>>> origin/master
     }
 
     void updateSnake0(){
@@ -302,7 +318,12 @@ public class SnakeView extends View {
             x=x1; y=y1;
         }
         public boolean equals(Coordinate other){
+<<<<<<< HEAD
             return x == other.x && y == other.y;
+=======
+            if(x==other.x && y==other.y) return true;
+            return false;
+>>>>>>> origin/master
         }
     } //Coordinate
 
